@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090611">
+<title>For Giri ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+<div id="hearts"></div>
+
+<header class="topbar">
+  <div>GIRI <span>♡</span></div>
+  <button id="musicBtn">♪ Music</button>
+</header>
+
+<main>
+<section class="screen hero active" data-screen="0">
+  <div class="eyebrow">A little something made with love</div>
+  <div class="heartLogo">♡</div>
+  <h1>Happy Birthday<br><span>Girisha</span></h1>
+  <p class="lead">For the girl whose smile can make an ordinary moment feel a little more beautiful.</p>
+  <button class="cta" data-next="1">🎁 Open Your Surprise</button>
+  <div class="hint">tap gently • there are surprises inside</div>
+</section>
+
+<section class="screen" data-screen="1">
+  <div class="eyebrow">01 · A small confession</div>
+  <h2>There is something I have always noticed...</h2>
+  <div class="quoteCard">
+    <div class="bigSmile">😊</div>
+    <p>Your smile.</p>
+    <small>It's honestly one of the cutest things about you.</small>
+  </div>
+  <button class="cta" data-next="2">😊 Show Me</button>
+</section>
+
+<section class="screen" data-screen="2">
+  <div class="eyebrow">02 · Smile collection</div>
+  <h2>Because one photo wasn't enough. ❤️</h2>
+  <p>Tap the cards. Let the smiles appear one by one.</p>
+  <div class="revealGrid" id="smileGrid"></div>
+  <button class="cta" id="smileBtn">✨ Reveal the smiles</button>
+  <button class="ghost hidden" data-next="3" id="smileNext">👀 I noticed something else</button>
+</section>
+
+<section class="screen" data-screen="3">
+  <div class="eyebrow">03 · Those eyes</div>
+  <h2>And then... those eyes. 👀</h2>
+  <div class="eyeCard">
+    <img src="images/photo16.jpeg" alt="Girisha">
+    <div class="eyeGlow"></div>
+  </div>
+  <p class="soft">Some pictures don't need a long caption.</p>
+  <button class="cta" data-next="4">💗 Next little surprise</button>
+</section>
+
+<section class="screen" data-screen="4">
+  <div class="eyebrow">04 · Giri & Chikiri</div>
+  <h2>Two names I like saying. 🥰</h2>
+  <div class="nameButtons">
+    <button class="nameBtn" data-name="Giri" data-photo="5">Giri</button>
+    <button class="nameBtn" data-name="Chikiri" data-photo="18">Chikiri</button>
+  </div>
+  <div id="nameReveal" class="nameReveal hidden"></div>
+  <button class="cta hidden" id="nameNext" data-next="5">💌 Something from my heart</button>
+</section>
+
+<section class="screen" data-screen="5">
+  <div class="eyebrow">05 · No perfect memory</div>
+  <h2>My favorite memory?</h2>
+  <div class="letterCard">
+    <p>I don't know if I can choose just one.</p>
+    <p>When I'm talking with you, somehow even an ordinary conversation becomes an awesome time for me.</p>
+    <p>That's what makes the little moments special — not where we are, not what we're doing, just the happiness of talking to you.</p>
+  </div>
+  <button class="cta" data-next="6">📸 Take me through the memories</button>
+</section>
+
+<section class="screen wide" data-screen="6">
+  <div class="eyebrow">06 · 21 little frames</div>
+  <h2>A tiny museum of <span>Giri</span>. ✨</h2>
+  <p>Tap any picture. Every frame has its own little moment.</p>
+  <div class="gallery" id="gallery"></div>
+  <button class="cta" data-next="7">🌸 One more thing</button>
+</section>
+
+<section class="screen" data-screen="7">
+  <div class="eyebrow">07 · Birthday wishes</div>
+  <h2>What I genuinely wish for you 🎂</h2>
+  <div class="wishList">
+    <div>🌸 More reasons to smile</div>
+    <div>✨ Peace in your heart</div>
+    <div>🚀 Success in everything you chase</div>
+    <div>🥰 Beautiful people around you</div>
+    <div>💫 Dreams that actually come true</div>
+  </div>
+  <p class="soft">And a year that is kinder to you than the last one.</p>
+  <button class="cta" data-next="8">💌 Open the letter</button>
+</section>
+
+<section class="screen" data-screen="8">
+  <div class="eyebrow">08 · From Seetharam</div>
+  <h2>One little letter for you. ❤️</h2>
+  <button class="envelope" id="envelope">💌<small>tap to open</small></button>
+  <div class="letterCard hidden" id="letter">
+    <p><strong>Dear Giri,</strong></p>
+    <p>Happy Birthday to someone who became important to me without me even planning it.</p>
+    <p>I care about you a lot. I love the way you smile, the way simple conversations with you can become my favorite part of a day, and the little memories that stay in my mind longer than I expect.</p>
+    <p>I know life isn't always simple, and I don't want this birthday wish to put any pressure on you. Today is simply about celebrating <em>you</em>.</p>
+    <p>Keep smiling, keep growing, and keep being the wonderful person you are.</p>
+    <p>May you always have reasons to be genuinely happy. ❤️</p>
+    <p class="sign">— Seetharam</p>
+  </div>
+  <button class="cta hidden" id="letterNext" data-next="9">🎁 There is ONE last surprise</button>
+</section>
+
+<section class="screen final" data-screen="9">
+  <div class="eyebrow">09 · One last little frame</div>
+  <h2>One last surprise... ❤️</h2>
+  <p>I saved this picture only for the very end.</p>
+  <div id="final">
+    <div class="finalPhoto"><img src="images/photo03.jpeg" alt="Girisha">
+    <div class="burstText">HAPPY BIRTHDAY<br><span>GIRISHA</span> ❤️</div>
+    <p class="finalLine">Keep that beautiful smile forever. 😊</p>
+    <div class="sign">— With lots of care, Seetharam ❤️</div>
+    <button class="ghost" id="replay">↻ Start Again</button>
+  </div>
+</section>
+</main>
+
+<div class="lightbox hidden" id="lightbox">
+  <button id="close">×</button>
+  <img id="lightImg" alt="">
+  <p id="lightCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
